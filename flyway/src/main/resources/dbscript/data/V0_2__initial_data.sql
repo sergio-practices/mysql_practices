@@ -1,0 +1,1 @@
+INSERT INTO employee (name, email, date_of_birth) VALUES ('SERGIO', 'SERGIOPF@GMAI.COM', '2023-01-12 03:45:00'); 
