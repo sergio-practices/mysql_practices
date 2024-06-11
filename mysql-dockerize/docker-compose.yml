@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  tui:
+    image: mysql-test:latest
+    container_name: demo-mysql-test
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
