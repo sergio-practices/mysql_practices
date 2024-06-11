@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:8.0.30
+    container_name: mysql-demo
+    environment:
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=admin
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - ./init_01.sql:/docker-entrypoint-initdb.d/init_01.sql
