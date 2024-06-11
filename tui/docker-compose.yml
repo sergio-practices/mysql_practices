@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  tui:
+    image: tui:latest
+    container_name: demo-tui
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080

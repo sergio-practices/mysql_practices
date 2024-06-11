@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  tui:
+    image: tui
+    container_name: demo-tui
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+      - 5005:5005 #E$xpose debug
+    environment:
+      - tui-host=demo-tui
+      - tui-port=8080
+      - JAVA_TOOL_OPTIONS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
