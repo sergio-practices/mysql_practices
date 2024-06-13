@@ -1,4 +1,4 @@
-'tui' is based on H2 as its main database and tests. It has the configuration for sonar and swagger and a special docker-compose for debugging local against the docker container
+'tui' is based on H2 as its main database and tests. It has the configuration for sonar and swagger, global exceptions control and a special docker-compose to debug local against the docker container
 
 'mysql-dockerize' is a mysql project configured for Docker
 
